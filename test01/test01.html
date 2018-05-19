@@ -1,0 +1,721 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>贵美商城</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		li{
+			list-style:none;
+		}
+		a{
+			text-decoration:none;
+			color:#666;
+		}
+		#container{
+			margin:auto;
+			width:1024px;
+			height:800px;
+/*			outline:1px solid black;*/
+		}
+		#top{
+			width:1024px;
+			height:135px;
+/*			outline:1px solid red;*/
+			background:url(../images/h_bg.jpg) no-repeat;
+		}
+		#top_1{
+			outline:1px solid black;
+			margin-right:25px;
+		}
+		#top_1 li{
+			float:right;
+/*			border:1px solid green;*/
+			line-height: 40px;
+			padding:0px 3px 0px 3px;
+			font-size:14px;
+		}
+		.img_1{
+			width:20px;
+			height:20px;
+			margin-top:10px;
+		}
+		.m1{
+			background:url(../images/icon.gif) no-repeat -5px -4px;
+		}
+		.m2{
+			background:url(../images/icon.gif) no-repeat -45px -4px;
+		}
+		.m3{
+			background:url(../images/icon.gif) no-repeat -90px -4px;
+		}
+		.m4{
+			background:url(../images/icon.gif) no-repeat -132px -4px;
+		}	
+		.btn a{
+/*			outline:1px solid red;*/
+			background:url(../images/icon.gif) no-repeat -2px -29px;
+			padding:0px 6px 0px 6px;	
+		}
+		#top span{
+			font-size:16px;
+			color:#666;
+			float: right;
+			margin-right:80px;
+			margin-top:30px;
+		}
+		#top_2{
+			margin-left:25px;
+		}
+		#top_2 li{
+			float:left;
+/*			outline:1px solid black;*/
+			margin-top:13px;
+			width: 83px;
+			text-align: center;
+		}
+		#top_2 li a{
+			color:black;
+		}
+		#body{
+			width:977px;
+			margin:auto;
+			height: 650px;
+/*			outline: 1px solid green;*/
+/*			background: url(../images/bg.gif) no-repeat;*/
+		}
+		#body>*{
+			float:left;
+		}
+		#left{
+			height:640px;
+			width:198px;
+			margin-top:5px;
+			border:1px solid #666;
+			border-radius:5px;
+			overflow: hidden;
+		}
+		#left_h{
+			width:200px;
+			height: 32px;
+			background:url(../images/bg.PNG) repeat-x;
+/*			outline:1px solid black;*/
+		}
+		#left_h ul li{
+			float:left;
+			width: 100px;
+			line-height: 32px;
+		}
+		#left_h ul li a{
+			color:#efefef;
+		}
+		#left_h ul:first-child{
+			text-indent: 10px;
+		}
+		#left_h ul:last-child{
+			text-indent:20px;
+		}
+		.left_m span{
+/*			outline:1px solid black;*/
+			display: inline-block;
+			width: 200px;
+			height: 26px;
+			color:#FC7305;
+			line-height: 27px;
+			text-indent:40px;
+			background-color: #efefef;
+		}
+		.left_m ul li{
+			float:left;
+/*			outline:1px solid black;*/
+			width:66px;
+			height:25px;
+			line-height:25px; 
+			text-indent:12px;
+		}
+		.left_m ul li a{
+			font-size:12px;
+			color:#333;
+		}
+		.left_m_4 li{
+			height:26px!important;
+		}
+		.left_m_2 li{
+			height:24px!important;
+		}
+		#center{
+			height:640px;
+			width:525px;
+			margin-top:5px;
+/*			outline: 1px solid #F08712;*/
+			margin-left:12px;
+			
+		}
+		#center_img{
+			width:525px;
+			height:190px;
+			border:1xp solid black;
+		}
+		#center_b{
+			margin-top:10px;
+			width:525px;
+			height:440px;
+/*			outline:1px solid black;*/
+			border-radius:5px;
+			overflow:hidden;
+			border:1px solid #999;
+		}
+		.center_b_1{
+			width:525px;
+			height:25px;
+			background: url(../images/bg.png) repeat-x -3px;
+		}
+		.center_b_1 li{
+			float:left;
+/*			border:1px solid black;*/
+			line-height: 25px;
+			text-indent:20px;
+		}
+		.start{
+			width:21px;
+			height: 21px;
+			margin-top: 2px;
+			background: url(../images/start.jpg) no-repeat;
+		}
+		.center_b_2{
+			width:525px;
+			height:410px;
+/*			outline:1px black solid;*/
+		}
+		.center_b_2 li{
+			float:left;
+			width:174px;
+			height: 136px;
+/*			outline:1px solid black;*/
+		}
+		.center_b_2 li div{
+			margin-top: 10px;
+/*			border:1px solid red;*/
+			width:174px;
+			text-align: center;	
+			height:80px;
+			line-height: 80px;
+		}
+		.center_b_2 li div img{
+			width:80px;
+			border:1px solid #999;
+		}
+		.center_b_2 li span{
+			display :inline-block;
+			margin:auto;
+			width:154px;
+			height:36px;
+			text-align: center;
+			font-size: 14px;
+		}
+		#right{
+			height:640px;
+			width:228px;
+			margin-top:5px;
+/*			outline:1px solid black;*/
+			margin-left:11px;
+		}
+		#right_1{
+			width:228px;
+			height:128px;
+			border-radius:5px;
+			overflow: hidden;
+			border:1px solid #999;
+		}
+		.right_1_h{
+			background:url(../images/bg.png) repeat-x;
+			width:228px;
+			height: 32px;
+		}
+		.right_1_h li{
+			float:left;
+/*			outline:1px solid red;*/
+			line-height: 32px;
+			width:114px;
+			color:#efefef;
+			font-size:15px;
+		}
+		.right_1_h:first-child{
+			text-indent:10px;
+		}
+		.right_1_img{
+			float:left;
+			margin-left: 10px;
+			margin-top:7px;
+			border:1px solid #999;
+		}
+		.right_1_m{
+			float:left;
+			margin:3px 0px 0px 10px;
+		}
+		.right_1_m li{
+			height:20px;
+		}
+		.right_1_m li a{
+			font-size:12px;
+		}
+		#right_2{
+			margin-top:7px;
+			width:228px;
+			height: 290px;
+			border:1px solid #999;
+			border-radius:5px;
+		}
+		.right_2_x{
+/*			border:1px solid red;*/
+			height:63px;
+		}
+		.right_2_x>*{
+			float:left;
+		}
+		.right_2_img{
+			width:60px;
+			height:50px;
+			border:1px solid #999;
+			margin-top:5px;
+			margin-left:10px;
+			display:inline-block;
+		}
+		.right_2_span{
+			margin:25px 0px 0px 5px;
+			display:inline-block;
+/*			border:1px solid #999;*/
+			font-size:14px;
+		}
+		#right_3{
+			margin-top:5px;
+			width:228px;
+			height:200px;
+/*			border:1px solid #999;*/
+		}
+		.right_3_h{
+			width:228px;
+			height:32px;
+/*			outline:1px solid black;*/
+		}
+		.right_3_h li{
+			float:left;
+/*			outline:1px solid green;*/
+			height:26px;
+			width:70px;
+			text-align:center;
+			margin-top:6px;
+			background:url(../images/bg-h.jpg);
+			border-bottom:1px solid #F26C06;
+			
+		}
+		.right_3_h li a{
+			font-size:14px;
+		}
+		.specify{
+			margin:0px!important;
+			width:88px!important;
+			height: 32px!important;
+			line-height: 32px!important;
+			border-radius:5px 5px 0px 0px!important;
+			border:1px solid #F26C06;
+			background-image: none!important;
+			border-bottom: none !important;
+		} 	
+		.right_3_b{
+			float:left;
+			margin: 25px 0px 0px 55px;
+/*			border:1px solid black;*/
+		}
+		.right_3_b li span{
+			font-size:14px;
+		}
+		.right_3_b li{
+/*			border:1px solid red;*/
+			line-height: 27px;
+		}
+		.right_3_b li select{
+			width:70px;
+		}
+		.right_3_bb{
+			height:165px;
+			border:1px solid #999;
+			border-top:none;
+			overflow: hidden;
+			border-radius:0px 0px 5px 5px;
+		}
+		.right_3_img{
+			width:92px;
+			height:27px;
+/*			border:1px solid red;*/
+			float:left;
+			margin:5px 0px 0px 65px;
+			background:url(../images/tab2.gif) no-repeat -64px -108px;
+			cursor: pointer:
+		}
+		#foot{
+			width:977px;
+			height:150px;
+/*			border:1px solid black;*/
+			margin:auto;
+		}
+		#foot ul li{
+			float:left;
+			padding:4px 3px 3px 5px;
+			font-size:12px;
+		}
+		#foot ul{
+			width:840px;
+			height:30px;
+			margin:auto;
+		}
+		#foot ul li a,span{
+			font-size:12px;
+		}
+		.foot_1{
+			width:977px;
+		}
+		.foot_1 span{
+			text-align: center;
+			display:inline-block;
+			width:977px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		var number=1;
+		function img(){
+			var c="../images/ad-0";
+			var all=c+number+".jpg";
+			//alert(all);
+			document.getElementById("center_img_1").src=all;
+			number++;
+			if(number>4)
+				number=1;
+		}
+		function loading(){
+			setTimeout(loading,1000);
+			img();
+		}
+		window.onload=function(){
+			setTimeout(loading,0);
+		}
+		$("document").ready(function(){
+			$("#mobile").mouseenter(function(){
+				$("#notebook").removeClass("specify");
+				$("#mobile").addClass("specify");
+				$("#notebook").css("border-radius","5px 0px 0px 0px");
+				$("#right_3_b_1").css("display","none");
+				$("#right_3_b_2").css("display","block");
+			});
+			$("#notebook").mouseenter(function(){
+				$("#mobile").removeClass("specify");
+				$("#notebook").addClass("specify");
+				$("#right_3_b_1").css("display","block");
+				$("#right_3_b_2").css("display","none");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="top">
+			<ul id="top_1">
+				<li class="btn"><a href="">注册</a></li>
+				<li class="btn"><a href="">登录</a></li>
+				<li><a href="">设为首页</a></li>
+				<li class="img_1 m4"></li>
+				<li><a href="">加入收藏</a></li>
+				<li class="img_1 m3"></li>
+				<li><a href="">帮助中心</a></li>
+				<li class="img_1 m2"></li>
+				<li><a href="">购物车</a></li>
+				<li class="img_1 m1"></li>
+			</ul>
+			<div style="clear:both;"></div>
+			<span>你好，欢迎访问贵美商城！118年5月18日11点31分</span>
+			<div style="clear:both;"></div>
+			<ul id="top_2">
+				<li><a href="">首&nbsp;&nbsp;页</a></li>
+				<li><a href="">家用电器</a></li>
+				<li><a href="">手机数码</a></li>
+				<li><a href="">日用百货</a></li>
+				<li><a href="">书&nbsp;&nbsp;籍</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li><a href="">免费开店</a></li>
+				<li><a href="">全球咨询</a></li>
+			</ul>
+		</div>
+		<div id="body">
+			<div id="left">
+				<div id="left_h">
+					<ul>
+						<li><a href="">商品分类</a></li>
+						<li><a href="">全部分类</a></li>
+					</ul>
+				</div>
+				<div class="left_m">
+					<span>家用电器</span>
+					<ul>
+						<li><a href="">大家电</a></li>
+						<li><a href="">洗衣机</a></li>
+						<li><a href="">平板电脑</a></li>
+						<li><a href="">电热水器</a></li>
+						<li><a href="">家庭音响</a></li>
+						<li><a href="">热水器</a></li>
+						<li><a href="">空调冰箱</a></li>
+						<li><a href="">冷柜</a></li>
+						<li><a href="">DVD</a></li>
+						<li><a href="">电视附件</a></li>
+						<li><a href="">电燃气</a></li>
+						<li><a href="">家电下乡</a></li>
+						<li><a href="">家电服务</a></li>
+						<li><a href="">电饭煲</a></li>
+						<li><a href="">摄像机</a></li>
+					</ul>
+					<span>书籍</span>
+					<ul class="left_m_2">
+						<li><a href="">大家电</a></li>
+						<li><a href="">洗衣机</a></li>
+						<li><a href="">平板电脑</a></li>
+						<li><a href="">电热水器</a></li>
+						<li><a href="">家庭音响</a></li>
+						<li><a href="">热水器</a></li>
+						<li><a href="">空调冰箱</a></li>
+						<li><a href="">冷柜</a></li>
+						<li><a href="">DVD</a></li>
+						<li><a href="">电视附件</a></li>
+						<li><a href="">电燃气</a></li>
+						<li><a href="">家电下乡</a></li>
+						<li><a href="">家电服务</a></li>
+						<li><a href="">电饭煲</a></li>
+						<li><a href="">摄像机</a></li>
+					</ul>
+					<span>手机数码</span>
+					<ul class="left_m_2">
+						<li><a href="">大家电</a></li>
+						<li><a href="">洗衣机</a></li>
+						<li><a href="">平板电脑</a></li>
+						<li><a href="">电热水器</a></li>
+						<li><a href="">家庭音响</a></li>
+						<li><a href="">热水器</a></li>
+						<li><a href="">空调冰箱</a></li>
+						<li><a href="">冷柜</a></li>
+						<li><a href="">DVD</a></li>
+						<li><a href="">电视附件</a></li>
+						<li><a href="">电燃气</a></li>
+						<li><a href="">家电下乡</a></li>
+						<li><a href="">家电服务</a></li>
+						<li><a href="">电饭煲</a></li>
+						<li><a href="">摄像机</a></li>
+					</ul>
+					<span>日用百货</span>
+					<ul  class="left_m_4">
+						<li><a href="">大家电</a></li>
+						<li><a href="">洗衣机</a></li>
+						<li><a href="">平板电脑</a></li>
+						<li><a href="">电热水器</a></li>
+						<li><a href="">家庭音响</a></li>
+						<li><a href="">热水器</a></li>
+						<li><a href="">空调冰箱</a></li>
+						<li><a href="">冷柜</a></li>
+						<li><a href="">DVD</a></li>
+						<li><a href="">电视附件</a></li>
+						<li><a href="">电燃气</a></li>
+						<li><a href="">家电下乡</a></li>
+						<li><a href="">家电服务</a></li>
+						<li><a href="">电饭煲</a></li>
+						<li><a href="">摄像机</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="center">
+				<div id="center_img">
+					<img id="center_img_1" src="../images/ad-01.jpg">
+				</div>
+				<div id="center_b">
+					<ul class="center_b_1">
+						<li>疯狂抢购</li>
+						<li class="start"></li>
+					</ul>
+					<ul class="center_b_2">
+						<li><div><img src="../images/earphone.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/Frame.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/laser-pen.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/mouse.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/promote-1.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/promote-2.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/promote-3.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/Wancom.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+						<li><div><img src="../images/notebook.jpg" alt=""></div><span>惠普商务移动应用英寸笔记本</span></li>
+					</ul>
+				</div>
+			</div>
+			<div id="right">
+				<div id="right_1">
+					<ul class="right_1_h">
+						<li>公告栏</li>
+						<li style="text-indent: 40px;">全部分类</li>
+					</ul>
+					<div style="clear: both;"></div>
+					<div class="right_1_img">
+						<img style="width:70px;" src="../images/cnm.PNG" alt="">
+					</div>
+					<ul class="right_1_m">
+						<li><a href="">大学要求老师开网店</a></li>
+						<li><a href="">安全锤网上大购物</a></li>
+						<li><a href="">商城竟成网购试衣间</a></li>
+						<li><a href="">2万网上开十家连锁店</a></li>
+					</ul>
+				</div>
+				<div id="right_2">
+					<ul class="right_1_h">
+						<li>新品上架</li>
+						<li style="text-indent: 40px;">全部分类</li>
+					</ul>
+					<div style="clear: both;"></div>
+					<div class="right_2_x">
+						<div class="right_2_img">
+							<img src="../images/show1.jpg" alt="">
+						</div>
+						<span class="right_2_span">大牌狂降价，三折直送</span>
+					</div>
+					<div class="right_2_x">
+						<div class="right_2_img">
+							<img src="../images/show1.jpg" alt="">
+						</div>
+						<span class="right_2_span">大牌狂降价，三折直送</span>
+					</div>
+					<div class="right_2_x">
+						<div class="right_2_img">
+							<img src="../images/show1.jpg" alt="">
+						</div>
+						<span class="right_2_span">大牌狂降价，三折直送</span>
+					</div>
+					<div class="right_2_x">
+						<div class="right_2_img">
+							<img src="../images/show1.jpg" alt="">
+						</div>
+						<span class="right_2_span">大牌狂降价，三折直送</span>
+					</div>
+				</div>
+				<div id="right_3">
+					<ul class="right_3_h">
+						<li class="specify"  id="notebook"><a href="">笔记本</a></li>
+						<li id="mobile"><a href="">手机充值</a></li>
+						<li style="width:67px;border-radius:0px 5px 0px 0px;"></li>
+					</ul>
+					<div style="clear: both;"></div>
+					<div class="right_3_bb">
+					<ul class="right_3_b" id="right_3_b_1">
+						<li>
+							<span>品牌:</span>
+							<select>
+								<option value="">联想</option>
+								<option value="">华硕</option>
+								<option value="">戴尔</option>
+							</select>
+						</li>
+						<li>
+							<span>尺寸:</span>
+							<select>
+								<option value="">14英寸</option>
+								<option value="">15.6英寸</option>
+								<option value="">17英寸</option>
+							</select>
+						</li>
+						<li>
+							<span>价格:</span>
+							<select>
+								<option value="">4000以下</option>
+								<option value="">5000以下</option>
+								<option value="">5000以上</option>
+							</select>
+						</li>
+					</ul>
+					<ul class="right_3_b" style="display:none;"  id="right_3_b_2">
+						<li>
+							<span>运营商:</span>
+							<select>
+								<option value="">移动</option>
+								<option value="">联通</option>
+								<option value="">电信</option>
+							</select>
+						</li>
+						<li>
+							<span>地区:</span>
+							<select>
+								<option value="">浙江</option>
+								<option value="">江西</option>
+								<option value="">湖南</option>
+							</select>
+						</li>
+						<li>
+							<span>面值:</span>
+							<select>
+								<option value="">40元</option>
+								<option value="">50元</option>
+								<option value="">60元</option>
+							</select>
+						</li>
+					</ul>
+					<div class="right_3_img"></div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div id="foot">
+			<ul>
+				<li>友情链接:</li>
+				<li><a href="">百度</a></li>
+				<li><span>|</span></li>
+				<li><a href="">Google</a></li>
+				<li><span>|</span></li>
+				<li><a href="">雅虎</a></li>
+				<li><span>|</span></li>
+				<li><a href="">淘宝</a></li>
+				<li><span>|</span></li>
+				<li><a href="">拍拍</a></li>
+				<li><span>|</span></li>
+				<li><a href="">易趣</a></li>
+				<li><span>|</span></li>
+				<li><a href="">当当</a></li>
+				<li><span>|</span></li>
+				<li><a href="">京东商城</a></li>
+				<li><span>|</span></li>
+				<li><a href="">迅雷</a></li>
+				<li><span>|</span></li>
+				<li><a href="">新浪</a></li>
+				<li><span>|</span></li>
+				<li><a href="">网易</a></li>
+				<li><span>|</span></li>
+				<li><a href="">搜狐</a></li>
+				<li><span>|</span></li>
+				<li><a href="">猫扑</a></li>
+				<li><span>|</span></li>
+				<li><a href="">开心网</a></li>
+				<li><span>|</span></li>
+				<li><a href="">新华网</a></li>
+				<li><span>|</span></li>
+				<li><a href="">百凤凰网</a></li>
+			</ul>
+			<div style="border:1px solid #999;width:977px;"></div>
+			<div class="foot_1">
+				<span>Copyright@2003-2010 北京市贵没上成有限公司ALL  RIGHT RESERVEED</span>
+				<span>热线：400-66-13060 Email:service@prd.com</span>
+				<span>ICP :泸ICP备05021104号</span>
+			</div>
+			<div style="text-align: center;">
+				<img src="../images/img1.gif" alt="">
+				<img src="../images/img2.gif" alt="">
+				<img src="../images/img3.gif" alt="">
+				<img src="../images/img4.gif" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
